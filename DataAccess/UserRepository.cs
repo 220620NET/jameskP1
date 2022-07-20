@@ -12,7 +12,7 @@ namespace DataAccess{
 
     public class UserRepository : IUserRepository {
 
-            string ConnectionString = "Server=tcp:jamesserver9.database.windows.net,1433;Initial Catalog=jamesdatabase;Persist Security Info=False;User ID=sqluser;Password=p4ssw0rd!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string ConnectionString = 
 
             public List<User> GetAllUsers(){
                 string sql = "select * from foundationproject.users;";

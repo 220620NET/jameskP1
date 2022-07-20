@@ -10,7 +10,7 @@ using CustomExceptions;
 
 namespace DataAccess{
     public class TicketRepository: ITicketRepository{
-            string ConnectionString = "Server=tcp:jamesserver9.database.windows.net,1433;Initial Catalog=jamesdatabase;Persist Security Info=False;User ID=sqluser;Password=p4ssw0rd!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string ConnectionString = 
         public List<Ticket> GetAllTickets() {
             string sql = "select * from foundationproject.tickets;";
             SqlConnection connection = new SqlConnection(ConnectionString);
@@ -105,11 +105,12 @@ namespace DataAccess{
             }
         public int CreateTicket(Ticket newTicket)
         {
-            string sql= "insert into foundationproject.tickets(authorID, description, status, amount) values(@e, @f, @g, @h);";
+            string sql= "insert into foundationproject.tickets(authorID, description, resolverid, status, amount) values(@e, @f, @x, @g, @h);";
             SqlConnection connection = new SqlConnection(ConnectionString);
             SqlCommand command = new SqlCommand(sql, connection);
             command.Parameters.AddWithValue("@e", newTicket.authorid);
             command.Parameters.AddWithValue("@f", newTicket.reason);
+            command.Parameters.AddWithValue("@x", newTicket.resolverid);
             command.Parameters.AddWithValue("@g", newTicket.status);
             command.Parameters.AddWithValue("@h", newTicket.amount);
             try{

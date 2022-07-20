@@ -54,35 +54,19 @@ app.MapGet("/users/userName/{userID}", (string userID, Usercontroller usercont) 
 
 app.MapPost("/users/CreateUser", (User u, Usercontroller usercont) => usercont.CreateUser(u));
 
+app.MapGet("/tickets/GetAllTickets", (Ticketcontroller ticketcont) => ticketcont.GetAllTickets());
 
-/*
-app.MapGet("/GetAllTickets", (Ticketcontroller ticketcont) => 
-ticketcont.GetAllTickets()
-);
+app.MapPost("/tickets/CreateTicket", (Ticket t, Ticketcontroller ticketcont) => ticketcont.CreateTicket(t));
+
+app.MapPost("/tickets/UpdateTicket{Ticket}", (Ticket ma, Ticketcontroller ticketcont) => ticketcont.UpdateTicket(ma));
+
+app.MapGet("/tickets/GetTicketsByID", (int ID, Ticketcontroller ticketcont) => ticketcont.GetTicketsByID(ID));
+
+app.MapGet("/tickets/GetTicketsByAuthor{authorID}", (int authorID, Ticketcontroller ticketcont) => ticketcont.GetTicketsByAuthor(authorID));
+
+app.MapGet("/tickets/GetTicketsByStatus{status}", (string status, Ticketcontroller ticketcont) => ticketcont.GetTicketsByStatus(status));
 
 
-app.MapGet("/CreateTicket", (Ticketcontroller ticketcont) => 
-ticketcont.CreateTicket(zeld)
-);
-
-
-app.MapGet("/UpdateTicket", (Ticketcontroller ticketcont) => 
-ticketcont.UpdateTicket(zeld)
-);
-
-app.MapGet("/GetTicketsByID", (Ticketcontroller ticketcont) => 
-ticketcont.GetTicketsByID(ID)
-);
-
-app.MapGet("/GetTicketsByAuthor", (Ticketcontroller ticketcont) => 
-ticketcont.GetTicketsByAuthor(authorID)
-);
-
-app.MapGet("/GetTicketsByStatus", (Ticketcontroller ticketcont) => 
-ticketcont.GetTicketsByStatus(status)
-);
-
-*/
 //app.MapGet("/");
 
 app.Run();

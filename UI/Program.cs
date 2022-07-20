@@ -45,11 +45,6 @@ else if (response1 == 2){
             dummyuser.password = passwordresponse;
             AuthService authserv = new AuthService();
             authserv.Login(dummyuser);
-
-
-
-
-
 }
 
 
