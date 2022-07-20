@@ -4,20 +4,20 @@ namespace Models{
     {
 
 
-            public string ID {get; set;}
-            public string author {get; set;}
-            public string resolver {get; set;}
-            public string description {get; set;}
+            public int ID {get; set;}
+            public int authorid {get; set;}
+            public int resolverid {get; set;}
+            public string reason {get; set;}
             public string status {get; set;}
             public double amount {get; set;}
 
 
-        public Ticket(string ID, string author, string resolver, string description, string status, double amount)
+        public Ticket(int ID, int authorid, int resolveid, string reason, string status, double amount)
         {
             this.ID = ID;
-            this.author = author;
-            this.resolver = resolver;
-            this.description = description;
+            this.authorid = authorid;
+            this.resolverid = resolveid;
+            this.reason = reason;
             this.status = status;
             this.amount = amount;
         }
