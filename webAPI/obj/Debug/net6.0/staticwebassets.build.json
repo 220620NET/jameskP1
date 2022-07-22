@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "9tdUljGb0aoWvbRcQcWkybaNAxtCGoKcLchaTefn73M=",
-  "Source": "webAPI",
-  "BasePath": "_content/webAPI",
+  "Hash": "qWIDttiHurVt0W82xiTX0A7xgYJ9/MKKTQaaiKq7axg=",
+  "Source": "webapi",
+  "BasePath": "_content/webapi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

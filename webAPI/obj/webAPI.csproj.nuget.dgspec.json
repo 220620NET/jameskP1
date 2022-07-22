@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webAPI\\webAPI.csproj": {}
+    "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webapi\\webapi.csproj": {}
   },
   "projects": {
     "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\CustomExceptions\\CustomExceptions.csproj": {
@@ -101,6 +101,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
@@ -243,14 +247,14 @@
         }
       }
     },
-    "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webAPI\\webAPI.csproj": {
+    "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webAPI\\webAPI.csproj",
-        "projectName": "webAPI",
-        "projectPath": "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webAPI\\webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webapi\\webapi.csproj",
+        "projectName": "webapi",
+        "projectPath": "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webapi\\webapi.csproj",
         "packagesPath": "C:\\Users\\after\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webAPI\\obj\\",
+        "outputPath": "C:\\Users\\after\\JamesKuhnRev2022\\JKp1\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\after\\AppData\\Roaming\\NuGet\\NuGet.Config",
